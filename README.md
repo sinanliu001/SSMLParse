@@ -1,4 +1,4 @@
-# Speechify Platform Functional Test
+# Functional Test
 
 ## Project Overview
 
