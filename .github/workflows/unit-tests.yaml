@@ -31,12 +31,6 @@ jobs:
       - name: Run unit tests
         run: pnpm run test:prod
         timeout-minutes: 5
-      - name: Report test results (LRU)
-        uses: mikepenz/action-junit-report@v4
-        if: success() || failure()
-        with:
-          report_paths: '**/test-results-lru.xml'
-          check_name: 'LRU Cache Test Report'
       - name: Report test results (SSML)
         uses: mikepenz/action-junit-report@v4
         if: success() || failure()
