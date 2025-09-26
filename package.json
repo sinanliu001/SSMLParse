@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npm run test",
     "test": "vitest watch",
-    "test:prod": "vitest run --reporter=junit src/lru-cache.test.ts --output-file=test-results-lru.xml ; vitest run --reporter=junit src/ssml.test.ts --output-file=test-results-ssml.xml",
+    "test:prod": "vitest run --reporter=junit src/ssml.test.ts --output-file=test-results-ssml.xml",
     "test:ssml": "vitest run src/ssml.test.ts"
   },
   "devDependencies": {
